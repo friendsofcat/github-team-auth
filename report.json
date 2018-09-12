@@ -1,0 +1,304 @@
+{
+    "Friendsofcat\\GitHubTeamAuth\\GitHubTeamAuthProvider": {
+        "name": "Friendsofcat\\GitHubTeamAuth\\GitHubTeamAuthProvider",
+        "interface": false,
+        "abstract": false,
+        "methods": [
+            {
+                "name": "boot",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 1,
+        "nbMethods": 1,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 1,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 1,
+        "ccn": 1,
+        "ccnMethodMax": 1,
+        "externals": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "parents": [
+            "Illuminate\\Support\\ServiceProvider"
+        ],
+        "lcom": 1,
+        "length": 10,
+        "vocabulary": 7,
+        "volume": 28.07,
+        "difficulty": 0.67,
+        "effort": 18.72,
+        "level": 1.5,
+        "bugs": 0.01,
+        "time": 1,
+        "intelligentContent": 42.11,
+        "number_operators": 2,
+        "number_operands": 8,
+        "number_operators_unique": 1,
+        "number_operands_unique": 6,
+        "cloc": 0,
+        "loc": 9,
+        "lloc": 9,
+        "mi": 68.91,
+        "mIwoC": 68.91,
+        "commentWeight": 0,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 4,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 4,
+        "totalStructuralComplexity": 4,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 4,
+        "package": "Friendsofcat\\GitHubTeamAuth\\",
+        "pageRank": 0.33,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Friendsofcat\\GitHubTeamAuth\\": {
+        "name": "Friendsofcat\\GitHubTeamAuth\\",
+        "classes": [
+            "Friendsofcat\\GitHubTeamAuth\\GitHubTeamAuthProvider",
+            "Friendsofcat\\GitHubTeamAuth\\Organization"
+        ],
+        "outgoing_class_dependencies": [
+            "Illuminate\\Support\\ServiceProvider",
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "outgoing_package_dependencies": [
+            "Illuminate\\Support\\",
+            "Illuminate\\Database\\Eloquent\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Friendsofcat\\GitHubTeamAuth\\GitHubAuthCore\\GitHubAuthService": {
+        "name": "Friendsofcat\\GitHubTeamAuth\\GitHubAuthCore\\GitHubAuthService",
+        "interface": false,
+        "abstract": false,
+        "methods": [
+            {
+                "name": "__construct",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "handleProviderCallback",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "authenticate",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUserOrganizations",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "storeTokenUserCache",
+                "role": null,
+                "public": false,
+                "private": true,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getUser",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setUser",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getClient",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setClient",
+                "role": null,
+                "public": true,
+                "private": false,
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "getOrganizations",
+                "role": "getter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            },
+            {
+                "name": "setOrganizations",
+                "role": "setter",
+                "_type": "Hal\\Metric\\FunctionMetric"
+            }
+        ],
+        "nbMethodsIncludingGettersSetters": 11,
+        "nbMethods": 6,
+        "nbMethodsPrivate": 3,
+        "nbMethodsPublic": 3,
+        "nbMethodsGetter": 3,
+        "nbMethodsSetters": 2,
+        "wmc": 12,
+        "ccn": 2,
+        "ccnMethodMax": 2,
+        "externals": [
+            "Laravel\\Socialite\\Facades\\Socialite",
+            "Http\\Adapter\\Guzzle6\\Client",
+            "Github\\HttpClient\\Builder",
+            "Github\\Client"
+        ],
+        "parents": [],
+        "lcom": 2,
+        "length": 35,
+        "vocabulary": 9,
+        "volume": 110.95,
+        "difficulty": 6,
+        "effort": 665.68,
+        "level": 0.17,
+        "bugs": 0.04,
+        "time": 37,
+        "intelligentContent": 18.49,
+        "number_operators": 11,
+        "number_operands": 24,
+        "number_operators_unique": 3,
+        "number_operands_unique": 6,
+        "cloc": 37,
+        "loc": 93,
+        "lloc": 56,
+        "mi": 88.72,
+        "mIwoC": 47.28,
+        "commentWeight": 41.45,
+        "kanDefect": 0.22,
+        "relativeStructuralComplexity": 64,
+        "relativeDataComplexity": 0.47,
+        "relativeSystemComplexity": 64.47,
+        "totalStructuralComplexity": 704,
+        "totalDataComplexity": 5.22,
+        "totalSystemComplexity": 709.22,
+        "package": "Friendsofcat\\GitHubTeamAuth\\GitHubAuthCore\\",
+        "pageRank": 0.33,
+        "afferentCoupling": 0,
+        "efferentCoupling": 4,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "Friendsofcat\\GitHubTeamAuth\\GitHubAuthCore\\": {
+        "name": "Friendsofcat\\GitHubTeamAuth\\GitHubAuthCore\\",
+        "classes": [
+            "Friendsofcat\\GitHubTeamAuth\\GitHubAuthCore\\GitHubAuthService"
+        ],
+        "outgoing_class_dependencies": [
+            "Laravel\\Socialite\\Facades\\Socialite",
+            "Http\\Adapter\\Guzzle6\\Client",
+            "Github\\HttpClient\\Builder",
+            "Github\\Client"
+        ],
+        "outgoing_package_dependencies": [
+            "Laravel\\Socialite\\Facades\\",
+            "Http\\Adapter\\Guzzle6\\",
+            "Github\\HttpClient\\",
+            "Github\\"
+        ],
+        "abstraction": 0,
+        "instability": 1,
+        "dependent_instabilities": [],
+        "distance": 0,
+        "normalized_distance": 0,
+        "violations": {},
+        "_type": "Hal\\Metric\\PackageMetric"
+    },
+    "Friendsofcat\\GitHubTeamAuth\\Organization": {
+        "name": "Friendsofcat\\GitHubTeamAuth\\Organization",
+        "interface": false,
+        "abstract": false,
+        "methods": [],
+        "nbMethodsIncludingGettersSetters": 0,
+        "nbMethods": 0,
+        "nbMethodsPrivate": 0,
+        "nbMethodsPublic": 0,
+        "nbMethodsGetter": 0,
+        "nbMethodsSetters": 0,
+        "wmc": 0,
+        "ccn": 1,
+        "ccnMethodMax": 0,
+        "externals": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "parents": [
+            "Illuminate\\Database\\Eloquent\\Model"
+        ],
+        "lcom": 0,
+        "length": 2,
+        "vocabulary": 2,
+        "volume": 2,
+        "difficulty": 0,
+        "effort": 0,
+        "level": 2,
+        "bugs": 0,
+        "time": 0,
+        "intelligentContent": 4,
+        "number_operators": 0,
+        "number_operands": 2,
+        "number_operators_unique": 0,
+        "number_operands_unique": 2,
+        "cloc": 5,
+        "loc": 10,
+        "lloc": 5,
+        "mi": 126.97,
+        "mIwoC": 82.51,
+        "commentWeight": 44.46,
+        "kanDefect": 0.15,
+        "relativeStructuralComplexity": 0,
+        "relativeDataComplexity": 0,
+        "relativeSystemComplexity": 0,
+        "totalStructuralComplexity": 0,
+        "totalDataComplexity": 0,
+        "totalSystemComplexity": 0,
+        "package": "Friendsofcat\\GitHubTeamAuth\\",
+        "pageRank": 0.33,
+        "afferentCoupling": 0,
+        "efferentCoupling": 1,
+        "instability": 1,
+        "violations": {},
+        "_type": "Hal\\Metric\\ClassMetric"
+    },
+    "tree": {
+        "name": "tree",
+        "depthOfInheritanceTree": 1.67,
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    },
+    "composer": {
+        "name": "composer",
+        "packages": [],
+        "packages-installed": [],
+        "violations": {},
+        "_type": "Hal\\Metric\\ProjectMetric"
+    }
+}
