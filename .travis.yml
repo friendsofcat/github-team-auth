@@ -20,9 +20,9 @@ before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
   - composer install --prefer-dist  --no-interaction
 
-after_success:
-  - travis_retry php vendor/bin/php-coveralls -v
-
 script:
   - vendor/bin/phpcs --standard=psr2 src/
   - phpunit --coverage-clover build/logs/clover.xml
+
+after_success:
+  - travis_retry php vendor/bin/php-coveralls -v
