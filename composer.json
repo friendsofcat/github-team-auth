@@ -1,6 +1,7 @@
 {
   "name": "friendsofcat/github-team-auth",
   "description": "Git hub log in tool",
+  "license": "MIT",
   "authors": [
     {
       "name": "Luiz Albertoni",

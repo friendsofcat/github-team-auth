@@ -1,5 +1,8 @@
 # GitHubLogin
 
+[![Build Status](https://travis-ci.org/friendsofcat/github-team-auth.svg?branch=master)](https://travis-ci.org/friendsofcat/github-team-auth)
+
+[![Coverage Status](https://coveralls.io/repos/github/friendsofcat/github-team-auth/badge.svg?branch=master)](https://coveralls.io/github/friendsofcat/github-team-auth?branch=master)
 
 ## Overview
 
