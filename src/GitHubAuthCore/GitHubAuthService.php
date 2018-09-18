@@ -219,7 +219,7 @@ class GitHubAuthService
             if ($user = \App\User::where('email', $this->user_github_object->email)->first()) {
                 $user->email = $this->user_github_object->email;
             } else {
-                $user = new User();
+                $user = new \App\User();
                 $user->email = $this->user_github_object->email;
             }
             Auth::login($user);
