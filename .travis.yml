@@ -17,7 +17,7 @@ cache:
     - vendor
 
 before_script:
-  - export CI_BRANCH = echo $TRAVIS_BRANCH;
+  - export CI_BRANCH =echo $TRAVIS_BRANCH;
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
   - composer install --prefer-dist  --no-interaction
 
