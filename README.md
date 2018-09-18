@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/friendsofcat/github-team-auth/badge.svg?branch=master)](https://coveralls.io/github/friendsofcat/github-team-auth?branch=master)
 
 ## Overview
-
+ 
 The GitHubLogin is a Laravel package which uses the socialite(https://github.com/laravel/socialite) to login a user by getting his github user account and permission.
 It basically get a github account and validate if the use is part of the expected organization and teams, and send a event with the user data.
 The expected organization and teams must be populated in database, which is possible to do by UI (See the UI section for more information).
