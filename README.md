@@ -66,7 +66,7 @@ Edit app/config/service.php to add the code below
     'github' => [
         'client_id' => env('GITHUB_CLIENT_ID'),
         'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' =>   ' https://{{APP_NAME}}/auth/github/callback',
+        'redirect' =>   "https://" . env("APP_NAME") . '/auth/github/callback',
     ],
 ~~~
 
