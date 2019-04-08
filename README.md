@@ -45,7 +45,9 @@ Publish config file
 php artisan vendor:publish --provider="Friendsofcat\GitHubTeamAuth\GitHubTeamAuthProvider" --tag='github_team_auth:config'
 ~~~
 
-The config file has only onw parameter, team_table_name, whihc define the name of the table in database for githubteams names, the default value is 'teams'
+The config file has only onw parameter, team_table_name, which define the name of the table in database for githubteams names, the default value is 'teams'
+
+The config file has only onw parameter, custom_redirect, which define where we should redirect.
 
 
 Publish migrations

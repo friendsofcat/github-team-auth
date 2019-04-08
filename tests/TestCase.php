@@ -22,6 +22,7 @@ class TestCase extends TestBench
         // Setup default database to use sqlite :memory:
         $app['config']->set('database.default', 'testbench');
         $app['config']->set('githublogin.team_table_name', 'teams');
+        $app['config']->set('githublogin.custom_redirect', '/');
         $app['config']->set('database.connections.testbench', [
             'driver'   => 'sqlite',
             'database' => ':memory:',
@@ -69,7 +70,7 @@ class TestCase extends TestBench
     /**
      * Setup the test environment.
      */
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 
