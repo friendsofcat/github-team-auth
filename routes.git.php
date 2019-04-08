@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Config;
 
 Route::group(['middleware' => ['web']], function () {
 
@@ -41,8 +42,10 @@ Route::group(['middleware' => ['web']], function () {
                 /** @var GitHubAuthService */
                 $git_hub_auth_service = App::make(\Friendsofcat\GitHubTeamAuth\GitHubAuthCore\GitHubAuthService::class);
                 $git_hub_auth_service->handleProviderCallback();
+                 
+                $custom_redirect =  Config::get('githublogin.custom_redirect');
 
-                return redirect()->intended();
+                return redirect()->intended($custom_redirect);
             } catch (\Exception $e) {
                 $message = sprintf(
                     "Error authenticating %s line %s",
