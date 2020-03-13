@@ -14,7 +14,7 @@
     "laravel/socialite": "^3.0|^4.0",
     "knplabs/github-api": "^2.9",
     "php-http/guzzle6-adapter": "^1.1",
-    "graham-campbell/github": "^7.4"
+    "graham-campbell/github": "^8.6"
   },
   "require-dev": {
     "nunomaduro/collision": "~1.1",
