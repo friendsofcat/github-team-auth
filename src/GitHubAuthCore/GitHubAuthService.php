@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 use Laravel\Socialite\Facades\Socialite;
-use Http\Adapter\Guzzle6\Client as GuzzleClient;
+use Illuminate\Support\Arr;
 use GrahamCampbell\GitHub\Facades\GitHub;
 use Mockery\CountValidator\Exception;
 use Friendsofcat\GitHubTeamAuth\Organization;
@@ -184,7 +184,7 @@ class GitHubAuthService
      */
     private function verifyPermissionResponse($response_body)
     {
-        if (array_get($response_body, 'state', null) !== "active") {
+        if (Arr::get($response_body, 'state', null) !== "active") {
             throw new \Exception("The user is not active in the git team");
         }
     }
