@@ -7,7 +7,7 @@
 ## Overview
  
 The GitHubLogin is a Laravel package which uses the socialite(https://github.com/laravel/socialite) to login a user by getting his github user account and permission.
-It basically get a github account and validate if the use is part of the expected organization and teams, and send a event with the user data.
+It basically get a github account and validate if the user is part of the expected organization and teams, also it send an event with the user data.
 The expected organization and teams must be populated in database, which is possible to do by UI (See the UI section for more information).
 
 ## Requirements
@@ -68,10 +68,9 @@ Edit app/config/service.php to add the code below
     'github' => [
         'client_id' => env('GITHUB_CLIENT_ID'),
         'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' =>   'https://cat-quality-service.test/auth/github/callback',
+        'redirect' =>   "https://" . env("APP_NAME") . '/auth/github/callback',
     ],
 ~~~
-
 
 Env file
 For service.php configurations is necessary to inform:
@@ -80,7 +79,18 @@ For service.php configurations is necessary to inform:
 - GITHUB_CLIENT_SECRET
 - redirect ( whihc must be  https://{{APP_NAME}}/auth/github/callback ).
 
-You can get all these parameters after register the app in the github callback feature.
+
+## Configuration
+
+## Create an OauthApp
+
+- For inform the GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET parameters you will need to create an OauthApp in GitHub, as the image below
+
+![Alt text](docs/example_setup.png?raw=true)
+
+
+- Any user of the system will need the follow rights: 
+'read:user', 'read:org'  since we use that users perms.
 
 ## View to Manage Organization and orgs
 
